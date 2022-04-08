@@ -241,3 +241,191 @@ nav li{
 
 
                             /*FILTRES*/
+.filtre{
+    margin: 030px 30px 10px 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.filtre h2{
+    display: inline;
+    font-size: 18px;
+    text-align: center;
+}
+
+.filtres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 670px;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.filtre-economique{
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    border: 2px solid #aab5c5;
+    text-align: center;
+    position: relative;
+}
+
+.filtre-economique::before{
+    content: "";
+    background-color: #DEEBFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: -2px;
+    top: -2px;
+    position: absolute;
+}
+
+.fa-money-bill-wave{
+    color: #0065FC;
+    position: absolute;
+    top: 50%; 
+    left: 12%;
+    transform: translate(-50%, -50%); 
+}
+
+.filtre-economique h2{
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    top: 50%; 
+    left: 60%;
+    transform: translate(-50%, -50%); 
+}
+
+.filtre-familial{
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    border: 2px solid #aab5c5;
+    text-align: center;
+    position: relative;
+}
+
+.filtre-familial::before{
+    content: "";
+    background-color: #DEEBFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: -2px;
+    top: -2px;
+    position: absolute;
+}
+
+.fa-child{
+    color: #0065FC;
+    position: absolute;
+    top: 50%; 
+    left: 15%;
+    transform: translate(-50%, -50%); 
+}
+
+.filtre-familial h2{
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    top: 50%; 
+    left: 62%;
+    transform: translate(-50%, -50%); 
+}
+
+.filtre-romantique{
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    border: 2px solid #aab5c5;
+    text-align: center;
+    position: relative;
+}
+
+.filtre-romantique::before{
+    content: "";
+    background-color: #DEEBFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: -2px;
+    top: -2px;
+    position: absolute;
+}
+
+.fa-heart{
+    color: #0065FC;
+    position: absolute;
+    top: 50%; 
+    left: 12%;
+    transform: translate(-50%, -50%); 
+}
+
+.filtre-romantique h2{
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    top: 50%; 
+    left: 60%;
+    transform: translate(-50%, -50%); 
+}
+
+.filtre-animaux{
+    height: 40px;
+    width: 190px;
+    border-radius: 30px;
+    border: 2px solid #aab5c5;
+    text-align: center;
+    position: relative;
+}
+
+.filtre-animaux::before{
+    content: "";
+    background-color: #DEEBFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: -2px;
+    top: -2px;
+    position: absolute;
+}
+
+.fa-dog{
+    color: #0065FC;
+    position: absolute;
+    top: 50%; 
+    left: 10%;
+    transform: translate(-50%, -50%); 
+}
+
+.filtre-animaux h2{
+    width: 130px;
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    top: 50%; 
+    left: 60%;
+    transform: translate(-50%, -50%); 
+}
+
+.hover:hover{
+    box-shadow: 2px 2px 5px 2px #aab5c5;
+    cursor: pointer;
+}
+
+.hover::after{
+    content: "";
+    height: 50px;
+    width: 0;
+    background-color: green;
+    transition: 0.5s linear;
+}
+
+.hover::after:hover{
+    width: 200px;
+}
