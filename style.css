@@ -70,7 +70,6 @@ nav li{
         justify-content: center;
         align-items: center;
         margin: 0;
-        border-bottom: 4px solid #0065FC;
         position: relative;
     }
 
@@ -85,6 +84,17 @@ nav li{
         background-color: #F2F2F2;
     }
 
+    header::before{
+        content: "";
+        bottom: -4px;
+        left: 0;
+        height: 4px;
+        width: 50%;
+        position: absolute;
+        z-index: 2;
+        background-color: #0065FC;
+    }
+
     .logo{
         width: 100px;
         margin: 20px 0;
@@ -92,7 +102,6 @@ nav li{
 
     nav{
         width: 100%;
-        margin-bottom: 20px;
     }
 
     nav ul{
@@ -107,8 +116,128 @@ nav li{
     .li-activite{
         border-top: none;
         padding: 0;
-    }    
+    }
+
+    .li-hebergement::before{
+        display: none;
+    }
+
+    nav ul{
+        height: 35px;
+    }
+
+    .ligne-hebergement,
+    .ligne-activite{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
+                        /*RECHERCHE*/
+.recherche{
+    margin: 0px 30px 10px 30px;
+}
 
+.recherche h1{
+    font-size: 20px;
+}
+
+.recherche p{
+    margin: 5px 0 15px 0;
+    font-size: 15px;
+}
+
+.barre-recherche{
+    border: 1px solid #F2F2F2;
+    height: 50px;
+    width: 380px;
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.barre-recherche::before{
+    content: "";
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    left: 0;
+    background-color: #F2F2F2;
+}
+
+.fa-map-marker-alt{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.barre-recherche input{
+    border: none;
+    position: absolute;
+    top: 50%; 
+    left: 36%;
+    transform: translate(-50%, -50%); 
+}
+
+.barre-recherche input::placeholder{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.barre-recherche button{
+    position: absolute;
+    right: 0;
+    width: 110px;
+    border: none;
+    background-color: #0065FC;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.barre-recherche button:hover{
+    box-shadow: 10px 1px 20px 1px #aab5c5;
+}
+
+.barre-recherche button p{
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.fa-search{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .recherche{
+        margin: 35px 30px 10px 30px;
+    }
+
+    .barre-recherche button{
+        border-radius: 20px;
+        width: 50px;
+    }
+
+    .barre-recherche button p{
+        display: none;
+    }
+
+    .fa-search{
+        color: white;
+        display: inline;
+    }
+}
+
+
+                            /*FILTRES*/
