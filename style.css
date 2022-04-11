@@ -430,12 +430,41 @@ nav li{
     }
 
     .filtres{
-        flex-wrap: wrap;
         margin-left: 0px;
-        margin-right: 20px;
+        margin-right: 0px;
         width: auto;
+        justify-content: start;
+    }
+
+    .filtre-economique,
+    .filtre-familial,
+    .filtre-romantique{
+        margin: 0 10px 10px 0;
     }
 }
 
 
                     /*INFOS DISPONIBILITES*/
+.infos-dispo{
+    margin: 20px 30px 10px 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-info{
+    color: #0065FC;
+    padding: 5px 10px;
+    border: 1px solid #aab5c5;
+    border-radius: 50%;
+}
+
+.infos-dispo p{
+    margin-left: 10px;
+}
+
+@media (max-width: 768px){
+    .infos-dispo{
+        align-items: flex-start;
+    }
+}
