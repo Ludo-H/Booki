@@ -418,14 +418,24 @@ nav li{
     cursor: pointer;
 }
 
-.hover::after{
-    content: "";
-    height: 50px;
-    width: 0;
-    background-color: green;
-    transition: 0.5s linear;
+@media (max-width: 768px){
+    .filtre{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .filtre h2{
+        margin-bottom: 20px;
+    }
+
+    .filtres{
+        flex-wrap: wrap;
+        margin-left: 0px;
+        margin-right: 20px;
+        width: auto;
+    }
 }
 
-.hover::after:hover{
-    width: 200px;
-}
+
+                    /*INFOS DISPONIBILITES*/
