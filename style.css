@@ -13,14 +13,12 @@
 tout ce qui est en dessous de 768 téléphones portables.
 */
 
-/*bleu (#0065FC),claire de ce bleu (#DEEBFF) gris pour le fond (#F2F2F2)*/
-
                                     /*HEADER*/
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px 50px;
+    margin: 30px 0px 30px 50px;
     align-items: center;
 }
 
@@ -222,11 +220,28 @@ nav li{
 @media (max-width: 768px){
     .recherche{
         margin: 35px 30px 10px 30px;
+        justify-items: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recherche h1, .recherche p{
+        display: inline;
+        text-align: center;
     }
 
     .barre-recherche button{
         border-radius: 20px;
         width: 50px;
+    }
+
+    .barre-recherche{
+        width: 300px;
+    }
+
+    .barre-recherche input{
+        left: 45%;
     }
 
     .barre-recherche button p{
@@ -514,6 +529,11 @@ nav li{
     margin: 30px;
 }
 
+.afficher-plus h3{
+    display: inline;
+    cursor: pointer;
+}
+
 .hebergement-populaire{
     grid-column: 3 / 4;
     background-color: #F2F2F2;
@@ -548,6 +568,132 @@ nav li{
     width: 300px;
     height: 110px;
     display: flex;
+}
+
+@media(max-width: 1200px) {
+    #hebergements{
+        width: 900px;
+    }
+    
+    .container-hebergement{
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(1, auto);
+    }
+
+    .hebergement-standard{
+        width: 520px;
+        height: 660px;
+    }
+
+    .carte-standard{
+        grid-template-columns: repeat(2, 200px);
+    }
+
+    .carte-populaire{
+        grid-template-rows: repeat(3, 150px);
+    }
+    
+    .carte-populaire a{
+        height: 150px;
+    }
+}
+
+@media(max-width: 992px){
+    .container-hebergement{
+        grid-template-columns: repeat(1, 360px);
+        grid-template-rows: repeat(2, auto);
+        grid-gap: 20px;
+    }
+
+    .hebergement-standard{
+        grid-column: 1 / 2;
+        grid-row: 0 / 1;
+        width: 700px;
+        height: 490px;
+    }
+
+    .carte-standard{
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(2, 150px);
+    }
+
+    .hebergement-populaire{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 700px;
+        height: 450px;
+    }
+
+    .carte-populaire{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px){
+    #hebergements{
+        margin: 0;
+        width: 100%;
+    }
+
+    .container-hebergement{
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(2, auto);
+        width: 100%;
+    }
+
+    .hebergement-populaire{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 100%;
+        border-radius: 0px;
+        height: 630px;
+    }
+
+    .carte-populaire{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .titre-populaire{
+        width: 300px;
+        justify-content: space-evenly;
+        margin: 30px auto 0;
+        font-size: 16px;
+    }
+
+    .titre-hebergement{
+        width: 300px;
+        justify-content: space-evenly;
+        margin: 30px auto 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .afficher-plus{
+        width: 300px;
+        justify-content: space-evenly;
+        margin: 30px auto;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .hebergement-standard{
+        grid-column: 1 / 2;
+        border-radius: 0px;
+        width: 100%;
+        height: auto;
+    }
+
+    .carte-standard{
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(6, 150px);
+        height: auto;
+    }
 }
 
 
@@ -915,6 +1061,17 @@ nav li{
     bottom: 10px;
 }
 
+@media(max-width: 1200px){
+    .soleil-img{
+        height: 144px;
+    }
+
+    .soleil-texte{
+        height: 135px;
+        margin: 15px 0 0 15px ;
+    }
+}
+
 
                         /*CARTE COEUR*/
 .coeur{
@@ -965,6 +1122,17 @@ nav li{
     bottom: 10px;
 }
 
+@media(max-width: 1200px){
+    .coeur-img{
+        height: 144px;
+    }
+
+    .coeur-texte{
+        height: 135px;
+        margin: 15px 0 0 15px ;
+    }
+}
+
 
                         /*CARTE BLEUBLANC*/
 .bleublanc{
@@ -1013,4 +1181,24 @@ nav li{
     position: absolute;
     left: 0;
     bottom: 10px;
+}
+
+@media(max-width: 1200px){
+    .bleublanc-img{
+        height: 144px;
+    }
+
+    .bleublanc-texte{
+        height: 135px;
+        margin: 15px 0 0 15px ;
+    }
+}
+
+
+
+
+
+
+#activites img{
+    width: 200px;
 }
