@@ -488,13 +488,13 @@ nav li{
 .hebergement-standard{
     grid-column: 1 / 3;
     background-color: #F2F2F2;
-    margin-right: 30px;
     border-radius: 20px;
     padding-top: 30px;
+    width: 720px;
 }
 
 .hebergement-standard h1{
-    width: 90%;
+    width: 650px;
     margin: auto;
 }
 
@@ -502,10 +502,10 @@ nav li{
     display: grid;
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(2, 150px);
-    width: 90%;
     margin: auto;
     padding-top: 20px;
     grid-gap: 30px;
+    justify-content: center;
 }
 
 
@@ -519,7 +519,7 @@ nav li{
 }
 
 .cannebiere-img{
-    margin: 5px;
+    margin: 3px;
     height: 85px;
 }
 
@@ -532,8 +532,9 @@ nav li{
 }
 
 .cannebiere-texte{
-    margin: 0 0 5px 15px;
+    margin: 0 0 5px 10px;
     position: relative;
+    height: 55px;
 }
 
 .cannebiere-texte h3{
@@ -554,7 +555,7 @@ nav li{
     bottom: 10px;
     position: absolute;
     left: 0;
-    bottom: -18px;
+    bottom: 5px;
 }
 
 .fa-star.blue{
@@ -576,19 +577,19 @@ nav li{
 
                     /*CARTE VIEUX PORT*/
 
-.cannebiere{
+.port{
     background-color: white;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.cannebiere-img{
-    margin: 5px;
+.port-img{
+    margin: 3px;
     height: 85px;
 }
 
-.cannebiere-img img{
+.port-img img{
     width: 100%;
     height: 100%;
     border-top-left-radius: 20px;
@@ -596,28 +597,221 @@ nav li{
     object-fit: cover;
 }
 
-.cannebiere-texte{
-    margin: 0 0 5px 15px;
+.port-texte{
+    margin: 0 0 5px 10px;
     position: relative;
+    height: 55px;
 }
 
-.cannebiere-texte h3{
+.port-texte h3{
     color: black;
     font-size: 13px;
     font-weight: bold;
 }
 
-.cannebiere-texte p{
+.port-texte p{
     color: black;
     font-size: 12px;
     margin: 3px 0;
 }
 
 
-.etoile-cannebiere{
+.etoile-port{
     display: inline;
     bottom: 10px;
     position: absolute;
     left: 0;
-    bottom: -18px;
+    bottom: 5px;
+}
+
+
+                    /*CARTE MOUETTES*/
+.mouettes{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mouettes-img{
+    margin: 3px;
+    height: 85px;
+}
+
+.mouettes-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.mouettes-texte{
+    margin: 0 0 5px 10px;
+    position: relative;
+    height: 55px;
+}
+
+.mouettes-texte h3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.mouettes-texte p{
+    color: black;
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+.etoile-mouettes{
+    display: inline;
+    bottom: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+}
+
+
+                    /*CARTE MER*/
+.mer{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mer-img{
+    margin: 3px;
+    height: 85px;
+}
+
+.mer-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.mer-texte{
+    margin: 0 0 5px 10px;
+    position: relative;
+    height: 55px;
+}
+
+.mer-texte h3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.mer-texte p{
+    color: black;
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+.etoile-mer{
+    display: inline;
+    bottom: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+}
+
+
+                    /*CARTE PANIER*/
+.panier{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panier-img{
+    margin: 3px;
+    height: 85px;
+}
+
+.panier-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.panier-texte{
+    margin: 0 0 5px 10px;
+    position: relative;
+    height: 55px;
+}
+
+.panier-texte h3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.panier-texte p{
+    color: black;
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+.etoile-panier{
+    display: inline;
+    bottom: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+}
+
+
+                        /*CARTE AMINA*/
+.amina{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.amina-img{
+    margin: 3px;
+    height: 85px;
+}
+
+.amina-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.amina-texte{
+    margin: 0 0 5px 10px;
+    position: relative;
+    height: 55px;
+}
+
+.amina-texte h3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.amina-texte p{
+    color: black;
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+.etoile-amina{
+    display: inline;
+    bottom: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
 }
