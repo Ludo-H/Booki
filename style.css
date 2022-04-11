@@ -491,7 +491,7 @@ nav li{
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 720px;
-    height: 500px;
+    height: 490px;
 }
 
 .titre-hebergement{
@@ -537,7 +537,7 @@ nav li{
 .carte-populaire{
     display: grid;
     grid-template-columns: repeat(1, 360px);
-    grid-template-rows: repeat(3, 120px);
+    grid-template-rows: repeat(3, 110px);
     margin: auto;
     padding-top: 20px;
     grid-gap: 30px;
@@ -546,7 +546,7 @@ nav li{
 
 .carte-populaire a{
     width: 300px;
-    height: 120px;
+    height: 110px;
     display: flex;
 }
 
@@ -877,7 +877,7 @@ nav li{
 .soleil-img{
     margin: auto 3px;
     width: 120px;
-    height: 114px;
+    height: 104px;
 }
 
 .soleil-img img{
@@ -890,7 +890,7 @@ nav li{
 
 .soleil-texte{
     width: 120px;
-    height: 110px;
+    height: 100px;
     margin: 10px 0 0 10px ;
     position: relative;
 }
@@ -917,3 +917,100 @@ nav li{
 
 
                         /*CARTE COEUR*/
+.coeur{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #b9c5d6;
+    width: 300px;
+}
+
+.coeur-img{
+    margin: auto 3px;
+    width: 120px;
+    height: 104px;
+}
+
+.coeur-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+}
+
+.coeur-texte{
+    width: 120px;
+    height: 100px;
+    margin: 10px 0 0 10px ;
+    position: relative;
+}
+
+.coeur-texte h3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.coeur-texte p{
+    color: black;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.etoile-coeur{
+    display: inline;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+
+
+                        /*CARTE BLEUBLANC*/
+.bleublanc{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #b9c5d6;
+    width: 300px;
+}
+
+.bleublanc-img{
+    margin: auto 3px;
+    width: 120px;
+    height: 104px;
+}
+
+.bleublanc-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+}
+
+.bleublanc-texte{
+    width: 120px;
+    height: 100px;
+    margin: 10px 0 0 10px ;
+    position: relative;
+}
+
+.bleublanc-texte h3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bleublanc-texte p{
+    color: black;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.etoile-bleublanc{
+    display: inline;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
