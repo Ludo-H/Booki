@@ -196,7 +196,7 @@ nav li{
     box-shadow: 10px 1px 20px 1px #aab5c5;
 }
 
-.barre-recherche button p{
+.barre-recherche button span{
     color: white;
     font-weight: bold;
     font-size: 14px;
@@ -237,7 +237,7 @@ nav li{
         left: 45%;
     }
 
-    .barre-recherche button p{
+    .barre-recherche button span{
         display: none;
     }
 
@@ -1824,7 +1824,5 @@ footer{
         height: 400px;
         flex-direction: column;
         justify-content: space-between;
-    }
-
-    
+    } 
 }
