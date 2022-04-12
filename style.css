@@ -134,7 +134,7 @@ nav li{
 
                         /*RECHERCHE*/
 .recherche{
-    margin: 0px 30px 10px 30px;
+    margin: 0px 0px 10px 30px;
 }
 
 .recherche h1{
@@ -271,7 +271,7 @@ nav li{
 
                             /*FILTRES*/
 .filtre{
-    margin: 030px 30px 10px 30px;
+    margin: 30px 0px 10px 30px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -475,7 +475,7 @@ nav li{
 
                     /*INFOS DISPONIBILITES*/
 .infos-dispo{
-    margin: 20px 30px 30px 30px;
+    margin: 20px 0px 30px 30px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -501,7 +501,8 @@ nav li{
 
                     /*SECTION HEBERGEMENT*/
 #hebergements{
-    margin: 0 30px 0 30px;
+    margin: 0 30px 0 0px;
+    padding-left: 30px;
     width: 1200px;
     height: auto;
 }
@@ -635,6 +636,7 @@ nav li{
 @media screen and (max-width: 768px){
     #hebergements{
         margin: 0;
+        padding: 0;
         height: auto;
         width: 100%;
     }
@@ -1252,11 +1254,9 @@ nav li{
 
 
                     /*SECTION 2 ACTIVITES*/
-#activites img{
-    width: 200px;
-}
 #activites{
-    margin: 0 30px 0 30px;
+    margin: 0 30px 0 0px;
+    padding-left: 30px;
     width: 1200px;
     height: 400px;
 }
@@ -1269,14 +1269,13 @@ nav li{
 }
 
 .titre-activite{
-    margin: 30px 30px 020px 0;
+    margin: 30px 30px 20px 0;
     font-size: 12px;
     font-weight: 600;
 }
 
 .carte-activite{
     height: 80%;
-    background-color: rosybrown;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1304,6 +1303,97 @@ nav li{
     align-content:space-between;
 }
 
+@media screen and (max-width: 1200px){
+    #activites{
+        width: 900px;
+    }
+
+    .container-activite{
+        width: 870px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carte-activite{
+        flex-direction: column;
+    }
+
+    .premieres-3-cartes{
+        height: 48%;
+        width: 100%;
+        flex-direction: row;
+        justify-content:space-around;
+        align-content: center;
+    }
+    
+    .dernieres-3-cartes{
+        width: 100%;
+        height: 48%;
+        flex-direction: row;
+        justify-content:space-around;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 992px){
+    #activites{
+        height: 700px;
+    }
+
+    .container-activite{
+        width: 700px;
+        height: 800px;
+    }
+
+    .carte-activite{
+        height: 615px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #activites{
+        margin: 0;
+        padding: 0;
+        height: 1150px;
+        width: 100%;
+    }
+
+    .container-activite{
+        width: 100%;
+        align-items: center;
+        height: 1150px;
+    }
+
+    .titre-activite{
+        align-self: flex-start;
+        padding-left: 20px;
+    }
+
+    .carte-activite{
+        flex-direction: column;
+        width: 300px;
+        height: 1025px;
+        justify-content: space-between;
+    }
+
+    .premieres-3-cartes{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 300px;
+        height: 500px;
+    }
+
+    .dernieres-3-cartes{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 300px;
+        height: 500px;
+    }
+}
+
 
 /********************3 PREMIERES CARTES*************************/
                         /* VIEUXPORT */
@@ -1312,7 +1402,7 @@ nav li{
     border-radius: 20px;
     box-shadow: 0 0 7px #b9c5d6;
     width: 45%;
-    height: 100%;
+    height: 320px;
 }
     
 .vieuxport-img{
@@ -1340,14 +1430,46 @@ nav li{
     padding: 14px 0 0 15px;
 }
 
+@media screen and (max-width: 1200px){
+    .vieuxport{
+        width: 250px;
+        height: 140px;
+    }
+        
+    .vieuxport-img{
+        height: 75%;
+    }
+         
+    .vieuxport-texte{
+        height: 25%;
+    }
+    
+    .vieuxport-texte h3{
+        padding: 12px 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .vieuxport{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .vieuxport{
+        margin-bottom: 0px;
+        width: 100%;
+        height: 150px;
+    }
+}
 
                         /* POMEGUES */
 .pomegues{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 7px #b9c5d6;
-    width: 45%;
-    height: 50%;
+    width: 255px;
+    height: 160px;
 }
     
 .pomegues-img{
@@ -1375,19 +1497,46 @@ nav li{
     padding: 12px 0 0 15px;
 }
 
+@media screen and (max-width: 1200px){
+    .pomegues{
+        width: 250px;
+        height: 140px;
+    }
+        
+    .pomegues-img{
+        height: 75%;
+    }
+         
+    .pomegues-texte{
+        height: 25%;
+    }
+    
+    .pomegues-texte h3{
+        padding: 12px 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .pomegues{
+        margin-bottom: 0px;
+        width: 100%;
+        height: 150px;
+    }
+}
+
 
                         /* FRIOUL */
 .frioul{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 7px #b9c5d6;
-    width: 45%;
-    height: 40%;
+    width: 255px;
+    height: 130px;
 }
     
 .frioul-img{
     width: 100%;
-    height: 75%;
+    height: 65%;
 }
     
 .frioul-img img{
@@ -1400,12 +1549,232 @@ nav li{
     
 .frioul-texte{
     width: 100%;
-    height: 25%;
+    height: 35%;
 }
 
 .frioul-texte h3{
     color: black;
     font-size: 13px;
     font-weight: bold;
+    padding: 15px 0 0 15px;
+}
+
+@media screen and (max-width: 1200px){
+    .frioul{
+        width: 250px;
+        height: 140px;
+    }
+        
+    .frioul-img{
+        height: 75%;
+    }
+         
+    .frioul-texte{
+        height: 25%;
+    }
+    
+    .frioul-texte h3{
+        padding: 12px 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .frioul{
+        margin-bottom: 0px;
+        width: 100%;
+        height: 150px;
+    }
+}
+
+
+/********************3 DERNIERES CARTES*************************/
+                        /* CALANQUES */
+.calanques{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #b9c5d6;
+    width: 45%;
+    height: 320px;
+}
+    
+.calanques-img{
+    width: 100%;
+    height: 88%;
+}
+    
+.calanques-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+    
+.calanques-texte{
+    width: 100%;
+    height: 12%;
+}
+
+.calanques-texte h3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 14px 0 0 15px;
+}
+
+@media screen and (max-width: 1200px){
+    .calanques{
+        width: 250px;
+        height: 140px;
+    }
+        
+    .calanques-img{
+        height: 75%;
+    }
+         
+    .calanques-texte{
+        height: 25%;
+    }
+    
+    .calanques-texte h3{
+        padding: 12px 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .calanques{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .calanques{
+        margin-bottom: 0px;
+        width: 100%;
+        height: 150px;
+    }
+}
+
+
+                        /* NOTREDAME */
+.notredame{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #b9c5d6;
+    width: 255px;
+    height: 130px;
+}
+    
+.notredame-img{
+    width: 100%;
+    height: 75%;
+}
+    
+.notredame-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+    
+.notredame-texte{
+    width: 100%;
+    height: 25%;
+}
+
+.notredame-texte h3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
     padding: 12px 0 0 15px;
+}
+
+@media screen and (max-width: 1200px){
+    .notredame{
+        width: 250px;
+        height: 140px;
+    }
+        
+    .notredame-img{
+        height: 75%;
+    }
+         
+    .notredame-texte{
+        height: 25%;
+    }
+    
+    .notredame-texte h3{
+        padding: 12px 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .notredame{
+        margin-bottom: 0px;
+        width: 100%;
+        height: 150px;
+    }
+}
+
+
+                        /* LONGCHAMP */
+.longchamp{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #b9c5d6;
+    width: 255px;
+    height: 160px;
+}
+    
+.longchamp-img{
+    width: 100%;
+    height: 65%;
+}
+    
+.longchamp-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+    
+.longchamp-texte{
+    width: 100%;
+    height: 35%;
+}
+
+.longchamp-texte h3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 15px 0 0 15px;
+}
+
+@media screen and (max-width: 1200px){
+    .longchamp{
+        width: 250px;
+        height: 140px;
+    }
+        
+    .longchamp-img{
+        height: 75%;
+    }
+         
+    .longchamp-texte{
+        height: 25%;
+    }
+    
+    .longchamp-texte h3{
+        padding: 12px 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .longchamp{
+        margin-bottom: 0px;
+        width: 100%;
+        height: 150px;
+    }
 }
