@@ -1251,6 +1251,161 @@ nav li{
 }
 
 
+                    /*SECTION 2 ACTIVITES*/
 #activites img{
     width: 200px;
+}
+#activites{
+    margin: 0 30px 0 30px;
+    width: 1200px;
+    height: 400px;
+}
+
+.container-activite{
+    width: 1110px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre-activite{
+    margin: 30px 30px 020px 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.carte-activite{
+    height: 80%;
+    background-color: rosybrown;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.premieres-3-cartes{
+    height: 100%;
+    width: 48%;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-content:space-between;
+}
+
+.dernieres-3-cartes{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-content:space-between;
+}
+
+
+/********************3 PREMIERES CARTES*************************/
+                        /* VIEUXPORT */
+.vieuxport{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #b9c5d6;
+    width: 45%;
+    height: 100%;
+}
+    
+.vieuxport-img{
+    width: 100%;
+    height: 88%;
+}
+    
+.vieuxport-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+    
+.vieuxport-texte{
+    width: 100%;
+    height: 12%;
+}
+
+.vieuxport-texte h3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 14px 0 0 15px;
+}
+
+
+                        /* POMEGUES */
+.pomegues{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #b9c5d6;
+    width: 45%;
+    height: 50%;
+}
+    
+.pomegues-img{
+    width: 100%;
+    height: 75%;
+}
+    
+.pomegues-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+    
+.pomegues-texte{
+    width: 100%;
+    height: 25%;
+}
+
+.pomegues-texte h3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px 0 0 15px;
+}
+
+
+                        /* FRIOUL */
+.frioul{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #b9c5d6;
+    width: 45%;
+    height: 40%;
+}
+    
+.frioul-img{
+    width: 100%;
+    height: 75%;
+}
+    
+.frioul-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+    
+.frioul-texte{
+    width: 100%;
+    height: 25%;
+}
+
+.frioul-texte h3{
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px 0 0 15px;
 }
