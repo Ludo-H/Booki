@@ -62,7 +62,7 @@ nav li{
     position: relative;
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     header{
         flex-direction: column;
         justify-content: center;
@@ -217,7 +217,7 @@ nav li{
     display: none;
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     .recherche{
         margin: 35px 30px 10px 30px;
         justify-items: center;
@@ -251,6 +251,20 @@ nav li{
     .fa-search{
         color: white;
         display: inline;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .barre-recherche form{
+        width: 200px;
+    }
+
+    .barre-recherche::before{
+        display: none;
+    }
+
+    .container-hebergement{
+        margin-top: 20px;
     }
 }
 
@@ -433,7 +447,7 @@ nav li{
     cursor: pointer;
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     .filtre{
         flex-direction: column;
         align-items: flex-start;
@@ -461,7 +475,7 @@ nav li{
 
                     /*INFOS DISPONIBILITES*/
 .infos-dispo{
-    margin: 20px 30px 10px 30px;
+    margin: 20px 30px 30px 30px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -478,7 +492,7 @@ nav li{
     margin-left: 10px;
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     .infos-dispo{
         align-items: flex-start;
     }
@@ -493,20 +507,18 @@ nav li{
 }
 
 .container-hebergement{
-    width: 100%;
+    width: 1110px;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: repeat(1, auto);
-    grid-column-gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .hebergement-standard{
-    grid-column: 1 / 3;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 720px;
-    height: 490px;
+    height: 480px;
 }
 
 .titre-hebergement{
@@ -516,17 +528,16 @@ nav li{
 }
 
 .carte-standard{
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(2, 150px);
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 30px 0 30px;
     padding-top: 20px;
-    grid-gap: 30px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .afficher-plus{
-    margin: 30px;
+    margin: 0 30px 20px 30px;
 }
 
 .afficher-plus h3{
@@ -535,14 +546,13 @@ nav li{
 }
 
 .hebergement-populaire{
-    grid-column: 3 / 4;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 360px;
 }
 
 .titre-populaire{
-    margin: 30px 30px 0 30px;
+    margin: 30px 30px 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -555,13 +565,11 @@ nav li{
 }
 
 .carte-populaire{
-    display: grid;
-    grid-template-columns: repeat(1, 360px);
-    grid-template-rows: repeat(3, 110px);
-    margin: auto;
-    padding-top: 20px;
-    grid-gap: 30px;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 380px;
 }
 
 .carte-populaire a{
@@ -570,14 +578,13 @@ nav li{
     display: flex;
 }
 
-@media(max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     #hebergements{
         width: 900px;
     }
     
     .container-hebergement{
-        grid-template-columns: repeat(3, 250px);
-        grid-template-rows: repeat(1, auto);
+        width: 920px;
     }
 
     .hebergement-standard{
@@ -585,114 +592,99 @@ nav li{
         height: 660px;
     }
 
-    .carte-standard{
-        grid-template-columns: repeat(2, 200px);
+    .carte-populaire{
+        height: 390px;
     }
 
-    .carte-populaire{
-        grid-template-rows: repeat(3, 150px);
-    }
-    
-    .carte-populaire a{
-        height: 150px;
+    .hebergement-populaire{
+        height: 490px;
     }
 }
 
-@media(max-width: 992px){
+@media screen and (max-width: 992px){
     .container-hebergement{
-        grid-template-columns: repeat(1, 360px);
-        grid-template-rows: repeat(2, auto);
-        grid-gap: 20px;
+        flex-direction: column-reverse;
+        height: 850px;
     }
 
     .hebergement-standard{
-        grid-column: 1 / 2;
-        grid-row: 0 / 1;
         width: 700px;
-        height: 490px;
+        height: 470px;
     }
 
     .carte-standard{
-        grid-template-columns: repeat(3, 200px);
-        grid-template-rows: repeat(2, 150px);
+        width: 650px;
+        margin: auto;
     }
 
     .hebergement-populaire{
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
         width: 700px;
-        height: 450px;
+        height: 350px;
     }
 
     .carte-populaire{
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        height: 270px;
+        width: 650px;
         justify-content: center;
+        margin: auto;
     }
 }
 
-@media(max-width: 768px){
+@media screen and (max-width: 768px){
     #hebergements{
         margin: 0;
+        height: auto;
         width: 100%;
     }
 
     .container-hebergement{
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(2, auto);
         width: 100%;
+        height: auto;
     }
 
     .hebergement-populaire{
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
         width: 100%;
         border-radius: 0px;
-        height: 630px;
+        height: 500px;
     }
 
     .carte-populaire{
-        display: flex;
         flex-direction: column;
         width: 300px;
         margin: 0 auto;
+        height: 440px;
+        justify-content: space-evenly;
+    }
+
+    .hebergement-standard{
+        background-color: white;
+        border-radius: 0px;
+        width: 100%;
+        height: auto;
+    }
+
+    .carte-standard{
+        height: auto;
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .titre-populaire{
-        width: 300px;
-        justify-content: space-evenly;
-        margin: 30px auto 0;
+        margin: 30px 20px 0 20px;
         font-size: 16px;
     }
 
     .titre-hebergement{
-        width: 300px;
-        justify-content: space-evenly;
-        margin: 30px auto 0;
-        font-size: 14px;
-        text-align: center;
+        margin: 30px 20px 0 20px;
+        font-size: 16px;
     }
 
     .afficher-plus{
-        width: 300px;
-        justify-content: space-evenly;
-        margin: 30px auto;
+        margin: 0px 20px 0 20px;
         font-size: 14px;
-        text-align: center;
-    }
-
-    .hebergement-standard{
-        grid-column: 1 / 2;
-        border-radius: 0px;
-        width: 100%;
-        height: auto;
-    }
-
-    .carte-standard{
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-        grid-template-rows: repeat(6, 150px);
-        height: auto;
     }
 }
 
@@ -701,6 +693,9 @@ nav li{
                     /*CARTE CANNEBIERE*/
 
 .cannebiere{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -748,26 +743,35 @@ nav li{
     bottom: 5px;
 }
 
-.fa-star.blue{
+.fa-star.blue{ /*Pour toutes les etoiles bleues*/
     color: #0065FC;
     font-size: 10px;
     letter-spacing: -3px;
 }
 
-.prix-bold{
+.prix-bold{  /*Pour tous les prix en gras*/
     font-weight: bold;
 }
 
 
-.fa-star.grey{
+.fa-star.grey{ /*Pour toutes les etoiles grises*/
     color: #aab5c5;
     font-size: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .cannebiere{
+        width: 300px;
+    }
 }
 
 
                     /*CARTE VIEUX PORT*/
 
 .port{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -815,9 +819,18 @@ nav li{
     bottom: 5px;
 }
 
+@media screen and (max-width: 768px){
+    .port{
+        width: 300px;
+    }
+}
+
 
                     /*CARTE MOUETTES*/
 .mouettes{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -864,9 +877,18 @@ nav li{
     bottom: 5px;
 }
 
+@media screen and (max-width: 768px){
+    .mouettes{
+        width: 300px;
+    }
+}
+
 
                     /*CARTE MER*/
 .mer{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -913,9 +935,18 @@ nav li{
     bottom: 5px;
 }
 
+@media screen and (max-width: 768px){
+    .mer{
+        width: 300px;
+    }
+}
+
 
                     /*CARTE PANIER*/
 .panier{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -962,9 +993,18 @@ nav li{
     bottom: 5px;
 }
 
+@media screen and (max-width: 768px){
+    .panier{
+        width: 300px;
+    }
+}
+
 
                         /*CARTE AMINA*/
 .amina{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 30px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -1009,6 +1049,12 @@ nav li{
     position: absolute;
     left: 0;
     bottom: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .amina{
+        width: 300px;
+    }
 }
 
 
@@ -1061,14 +1107,21 @@ nav li{
     bottom: 10px;
 }
 
-@media(max-width: 1200px){
-    .soleil-img{
-        height: 144px;
-    }
-
+@media screen and (max-width: 1200px){
     .soleil-texte{
-        height: 135px;
         margin: 15px 0 0 15px ;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .soleil{
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .soleil{
+        margin-right: 0;
     }
 }
 
@@ -1122,16 +1175,24 @@ nav li{
     bottom: 10px;
 }
 
-@media(max-width: 1200px){
-    .coeur-img{
-        height: 144px;
-    }
-
+@media screen and (max-width: 1200px){
     .coeur-texte{
-        height: 135px;
         margin: 15px 0 0 15px ;
     }
 }
+
+@media screen and (max-width: 992px){
+    .coeur{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .coeur{
+        margin-left: 0;
+    }
+}
+
 
 
                         /*CARTE BLEUBLANC*/
@@ -1183,20 +1244,11 @@ nav li{
     bottom: 10px;
 }
 
-@media(max-width: 1200px){
-    .bleublanc-img{
-        height: 144px;
-    }
-
+@media screen and (max-width: 1200px){
     .bleublanc-texte{
-        height: 135px;
         margin: 15px 0 0 15px ;
     }
 }
-
-
-
-
 
 
 #activites img{
