@@ -144,7 +144,7 @@ nav li{
 
 
                             /*FILTRES*/
-.filtre{
+.filtres{
     margin: 30px 0px 10px 30px;
     width: auto;
     height: 40px;
@@ -152,173 +152,43 @@ nav li{
     align-items: center;
 }
 
-.filtre h2{
-    display: inline;
+.filtres h2{
     font-size: 18px;
-    text-align: center;
+    margin-right: 30px;
 }
 
-.filtres{
+.filtre{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 670px;
-    padding: 0;
-    margin-left: 20px;
-}
-
-.filtre-economique{
-    height: 40px;
-    width: 150px;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: auto;
     border-radius: 30px;
     border: 2px solid #aab5c5;
     text-align: center;
-    position: relative;
+    margin-right: 20px;
 }
 
-.filtre-economique::before{
-    content: "";
-    background-color: #DEEBFF;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    left: -2px;
-    top: -2px;
-    position: absolute;
-}
-
-.fa-money-bill-wave{
-    color: #0065FC;
-    position: absolute;
-    top: 50%; 
-    left: 12%;
-    transform: translate(-50%, -50%); 
-}
-
-.filtre-economique h2{
-    position: absolute;
-    font-size: 14px;
-    font-weight: bold;
-    top: 50%; 
-    left: 60%;
-    transform: translate(-50%, -50%); 
-}
-
-.filtre-familial{
-    height: 40px;
-    width: 120px;
-    border-radius: 30px;
-    border: 2px solid #aab5c5;
-    text-align: center;
-    position: relative;
-}
-
-.filtre-familial::before{
-    content: "";
-    background-color: #DEEBFF;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    left: -2px;
-    top: -2px;
-    position: absolute;
-}
-
-.fa-child{
-    color: #0065FC;
-    position: absolute;
-    top: 50%; 
-    left: 15%;
-    transform: translate(-50%, -50%); 
-}
-
-.filtre-familial h2{
-    position: absolute;
-    font-size: 14px;
-    font-weight: bold;
-    top: 50%; 
-    left: 62%;
-    transform: translate(-50%, -50%); 
-}
-
-.filtre-romantique{
-    height: 40px;
-    width: 150px;
-    border-radius: 30px;
-    border: 2px solid #aab5c5;
-    text-align: center;
-    position: relative;
-}
-
-.filtre-romantique::before{
-    content: "";
-    background-color: #DEEBFF;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    left: -2px;
-    top: -2px;
-    position: absolute;
-}
-
-.fa-heart{
-    color: #0065FC;
-    position: absolute;
-    top: 50%; 
-    left: 12%;
-    transform: translate(-50%, -50%); 
-}
-
-.filtre-romantique h2{
-    position: absolute;
-    font-size: 14px;
-    font-weight: bold;
-    top: 50%; 
-    left: 60%;
-    transform: translate(-50%, -50%); 
-}
-
-.filtre-animaux{
-    height: 40px;
-    width: 190px;
-    border-radius: 30px;
-    border: 2px solid #aab5c5;
-    text-align: center;
-    position: relative;
-}
-
-.filtre-animaux::before{
-    content: "";
-    background-color: #DEEBFF;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    left: -2px;
-    top: -2px;
-    position: absolute;
-}
-
-.fa-dog{
-    color: #0065FC;
-    position: absolute;
-    top: 50%; 
-    left: 10%;
-    transform: translate(-50%, -50%); 
-}
-
-.filtre-animaux h2{
-    width: 130px;
-    position: absolute;
-    font-size: 14px;
-    font-weight: bold;
-    top: 50%; 
-    left: 60%;
-    transform: translate(-50%, -50%); 
-}
-
-.hover:hover{
+.filtre:hover{
     box-shadow: 2px 2px 5px 2px #aab5c5;
     cursor: pointer;
+}
+
+.filtre i{
+    padding-top: 15px;
+    color: #0065FC;
+    width: 60px;
+    height: 50px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    margin-left: -5px;
+    font-size: 18px;
+}
+
+.filtre h3{
+    font-size: 14px;
+    font-weight: bold;
+    width: 80%;
 }
 
 
@@ -343,566 +213,157 @@ nav li{
 }
 
 
-                    /*SECTION HEBERGEMENT*/
+                    /*HEBERGEMENT*/
 #hebergements{
-    margin: auto;
-    width: 1110px;
-    height: auto;
-}
-
-.container-hebergement{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.hebergement-standard{
+    display: inline-block;
+    width: 60%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 720px;
-    height: 480px;
+    padding: 40px 30px;
+    margin-left: 40px;
+    height: 600px;
 }
 
-.titre-hebergement{
-    margin: 30px 30px 0 30px;
-    font-size: 12px;
-    font-weight: 600;
+#hebergements h2{
+    margin-bottom: 15px;
 }
 
 .carte-standard{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 30px 0 30px;
-    padding-top: 20px;
     justify-content: space-between;
 }
 
-.afficher-plus{
-    margin: 0 30px 20px 30px;
-}
-
-.afficher-plus h3{
-    display: inline;
-    cursor: pointer;
-}
-
-.hebergement-populaire{
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    width: 360px;
-}
-
-.titre-populaire{
-    margin: 30px 30px 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.fa-chart-line{
-    font-size: 18px;
-}
-
-.carte-populaire{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 380px;
-}
-
-.carte-populaire a{
-    width: 300px;
-    height: 110px;
-    display: flex;
-}
-
-
-                    /*CARTE CANNEBIERE*/
-
-.cannebiere{
-    width: 200px;
-    height: 150px;
+.carte{
+    width: 30%;
+    height: 200px;
+    border-radius: 15px;
+    padding: 4px;
     margin-bottom: 30px;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
     box-shadow: 0 0 7px #b9c5d6;
+    background-color: white;
 }
 
-.cannebiere-img{
-    margin: 3px;
-    height: 85px;
-}
-
-.cannebiere-img img{
+.carte img{
     width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 60%;
     object-fit: cover;
 }
 
-.cannebiere-texte{
-    margin: 0 0 5px 10px;
-    position: relative;
-    height: 55px;
+.carte h3{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0 0 10px;
 }
 
-.cannebiere-texte h3{
+.carte p{
     color: black;
-    font-size: 13px;
+    font-size: 12px;
+    margin: 5px 0 5px 10px;
+}
+
+.prix-bold{ 
     font-weight: bold;
 }
 
-.cannebiere-texte p{
-    color: black;
-    font-size: 12px;
-    margin: 3px 0;
+.etoiles{
+    margin-left: 10px;
+    height: 30px;
 }
 
-
-.etoile-cannebiere{
-    display: inline;
-    bottom: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-}
-
-.fa-star.blue{ /*Pour toutes les etoiles bleues*/
+.fa-star.blue{
     color: #0065FC;
     font-size: 10px;
     letter-spacing: -3px;
 }
 
-.prix-bold{  /*Pour tous les prix en gras*/
-    font-weight: bold;
-}
-
-
-.fa-star.grey{ /*Pour toutes les etoiles grises*/
+.fa-star.grey{
     color: #aab5c5;
     font-size: 10px;
 }
 
-
-
-                    /*CARTE VIEUX PORT*/
-
-.port{
-    width: 200px;
-    height: 150px;
-    margin-bottom: 30px;
-    background-color: white;
+#hebergement-populaire{
+    height: 600px;
+    float: right;
+    width: 30%;
+    background-color: #F2F2F2;
     border-radius: 20px;
+    padding: 40px 30px 0px 30px;
+    margin-right: 40px;
+}
+
+.titre-populaire{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.fa-chart-line{
+    font-size: 20px;
+}
+
+.container-populaire{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.carte-populaire{
+    display: flex;
+    width: 100%;
+    height: 145px;
+    border-radius: 15px;
+    padding: 4px;
+    margin-bottom: 30px;
     box-shadow: 0 0 7px #b9c5d6;
+    background-color: white;
+    position: relative;
 }
 
-.port-img{
-    margin: 3px;
-    height: 85px;
-}
-
-.port-img img{
+.carte-populaire a{
     width: 100%;
     height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    position: absolute;
+    z-index: 2;
+}
+
+.carte-populaire img{
+    width: 40%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
     object-fit: cover;
 }
 
-.port-texte{
-    margin: 0 0 5px 10px;
-    position: relative;
-    height: 55px;
-}
-
-.port-texte h3{
-    color: black;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.port-texte p{
-    color: black;
-    font-size: 12px;
-    margin: 3px 0;
-}
-
-
-.etoile-port{
-    display: inline;
-    bottom: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-}
-
-
-                    /*CARTE MOUETTES*/
-.mouettes{
-    width: 200px;
-    height: 150px;
-    margin-bottom: 30px;
-    background-color: white;
-    border-radius: 20px;
+.texte-populaire{
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 7px #b9c5d6;
-}
-
-.mouettes-img{
-    margin: 3px;
-    height: 85px;
-}
-
-.mouettes-img img{
-    width: 100%;
     height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
-}
-
-.mouettes-texte{
-    margin: 0 0 5px 10px;
-    position: relative;
-    height: 55px;
-}
-
-.mouettes-texte h3{
-    color: black;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.mouettes-texte p{
-    color: black;
-    font-size: 12px;
-    margin: 3px 0;
-}
-
-.etoile-mouettes{
-    display: inline;
-    bottom: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-}
-
-
-                    /*CARTE MER*/
-.mer{
-    width: 200px;
-    height: 150px;
-    margin-bottom: 30px;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 7px #b9c5d6;
-}
-
-.mer-img{
-    margin: 3px;
-    height: 85px;
-}
-
-.mer-img img{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
-}
-
-.mer-texte{
-    margin: 0 0 5px 10px;
-    position: relative;
-    height: 55px;
-}
-
-.mer-texte h3{
-    color: black;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.mer-texte p{
-    color: black;
-    font-size: 12px;
-    margin: 3px 0;
-}
-
-.etoile-mer{
-    display: inline;
-    bottom: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-}
-
-
-                    /*CARTE PANIER*/
-.panier{
-    width: 200px;
-    height: 150px;
-    margin-bottom: 30px;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 7px #b9c5d6;
-}
-
-.panier-img{
-    margin: 3px;
-    height: 85px;
-}
-
-.panier-img img{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
-}
-
-.panier-texte{
-    margin: 0 0 5px 10px;
-    position: relative;
-    height: 55px;
-}
-
-.panier-texte h3{
-    color: black;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.panier-texte p{
-    color: black;
-    font-size: 12px;
-    margin: 3px 0;
-}
-
-.etoile-panier{
-    display: inline;
-    bottom: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-}
-
-
-
-                        /*CARTE AMINA*/
-.amina{
-    width: 200px;
-    height: 150px;
-    margin-bottom: 30px;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 7px #b9c5d6;
-}
-
-.amina-img{
-    margin: 3px;
-    height: 85px;
-}
-
-.amina-img img{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
-}
-
-.amina-texte{
-    margin: 0 0 5px 10px;
-    position: relative;
-    height: 55px;
-}
-
-.amina-texte h3{
-    color: black;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.amina-texte p{
-    color: black;
-    font-size: 12px;
-    margin: 3px 0;
-}
-
-.etoile-amina{
-    display: inline;
-    bottom: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-}
-
-
-                    /*CARTE SOLEIL*/
-.soleil{
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 7px #b9c5d6;
-    width: 300px;
-}
-
-.soleil-img{
-    margin: auto 3px;
-    width: 120px;
-    height: 104px;
-}
-
-.soleil-img img{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    object-fit: cover;
-}
-
-.soleil-texte{
-    width: 120px;
-    height: 100px;
-    margin: 10px 0 0 10px ;
+    padding: 20px;
     position: relative;
 }
 
-.soleil-texte h3{
+.carte-populaire h3{
     color: black;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 14px;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
-.soleil-texte p{
+.carte-populaire p{
     color: black;
     font-size: 12px;
-    margin: 5px 0;
 }
 
-.etoile-soleil{
-    display: inline;
+.etoiles-populaire{
     position: absolute;
-    left: 0;
-    bottom: 10px;
-}
-
-
-
-                        /*CARTE COEUR*/
-.coeur{
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 7px #b9c5d6;
-    width: 300px;
-}
-
-.coeur-img{
-    margin: auto 3px;
-    width: 120px;
-    height: 104px;
-}
-
-.coeur-img img{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    object-fit: cover;
-}
-
-.coeur-texte{
-    width: 120px;
-    height: 100px;
-    margin: 10px 0 0 10px ;
-    position: relative;
-}
-
-.coeur-texte h3{
-    color: black;
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.coeur-texte p{
-    color: black;
-    font-size: 12px;
-    margin: 5px 0;
-}
-
-.etoile-coeur{
-    display: inline;
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-}
-
-
-
-                        /*CARTE BLEUBLANC*/
-.bleublanc{
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 7px #b9c5d6;
-    width: 300px;
-}
-
-.bleublanc-img{
-    margin: auto 3px;
-    width: 120px;
-    height: 104px;
-}
-
-.bleublanc-img img{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    object-fit: cover;
-}
-
-.bleublanc-texte{
-    width: 120px;
-    height: 100px;
-    margin: 10px 0 0 10px ;
-    position: relative;
-}
-
-.bleublanc-texte h3{
-    color: black;
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.bleublanc-texte p{
-    color: black;
-    font-size: 12px;
-    margin: 5px 0;
-}
-
-.etoile-bleublanc{
-    display: inline;
-    position: absolute;
-    left: 0;
+    left: 20px;
     bottom: 10px;
 }
 
@@ -910,32 +371,25 @@ nav li{
                     /*SECTION 2 ACTIVITES*/
 #activites{
     margin: auto;
-    width: 1110px;
-    height: 400px;
+    width: 95%;
+    height: 450px;
 }
 
-.container-activite{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.titre-activite{
-    margin: 30px 30px 20px 0;
-    font-size: 12px;
+#activites h1{
+    height: 10%;
+    margin-top: 30px;
     font-weight: 600;
 }
 
-.carte-activite{
-    height: 80%;
+.container-activite{
+    height: 90%;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
     justify-content: space-between;
 }
 
-.premieres-3-cartes{
+.trois-cartes{
     height: 100%;
     width: 48%;
     display: flex;
@@ -945,235 +399,65 @@ nav li{
     align-content:space-between;
 }
 
-.dernieres-3-cartes{
-    width: 48%;
+.trois-cartes a{
+    width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    align-content:space-between;
 }
 
-
-
-/********************3 PREMIERES CARTES*************************/
-                        /* VIEUXPORT */
-.vieuxport{
+.grande {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 7px #b9c5d6;
     width: 45%;
-    height: 320px;
+    height: 100%;
 }
-    
-.vieuxport-img{
+
+.grande img{
     width: 100%;
     height: 88%;
-}
-    
-.vieuxport-img img{
-    width: 100%;
-    height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
 }
-    
-.vieuxport-texte{
-    width: 100%;
-    height: 12%;
-}
 
-.vieuxport-texte h3{
+.carte-activite h3{
     color: black;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
-    padding: 14px 0 0 15px;
+    margin: 10px 0 10px 10px;
 }
 
-
-
-                        /* POMEGUES */
-.pomegues{
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 7px #b9c5d6;
-    width: 255px;
-    height: 160px;
-}
-    
-.pomegues-img{
-    width: 100%;
-    height: 75%;
-}
-    
-.pomegues-img img{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
-}
-    
-.pomegues-texte{
-    width: 100%;
-    height: 25%;
-}
-
-.pomegues-texte h3{
-    color: black;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 12px 0 0 15px;
-}
-
-
-
-                        /* FRIOUL */
-.frioul{
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 7px #b9c5d6;
-    width: 255px;
-    height: 130px;
-}
-    
-.frioul-img{
-    width: 100%;
-    height: 65%;
-}
-    
-.frioul-img img{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
-}
-    
-.frioul-texte{
-    width: 100%;
-    height: 35%;
-}
-
-.frioul-texte h3{
-    color: black;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 15px 0 0 15px;
-}
-
-
-
-
-/********************3 DERNIERES CARTES*************************/
-                        /* CALANQUES */
-.calanques{
+.moyenne{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 7px #b9c5d6;
     width: 45%;
-    height: 320px;
+    height: 55%;
 }
-    
-.calanques-img{
+
+.moyenne img{
     width: 100%;
-    height: 88%;
-}
-    
-.calanques-img img{
-    width: 100%;
-    height: 100%;
+    height: 80%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
 }
-    
-.calanques-texte{
-    width: 100%;
-    height: 12%;
-}
 
-.calanques-texte h3{
-    color: black;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 14px 0 0 15px;
-}
-
-
-                        /* NOTREDAME */
-.notredame{
+.petite{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 7px #b9c5d6;
-    width: 255px;
-    height: 130px;
+    width: 45%;
+    height: 40%;
 }
-    
-.notredame-img{
+
+.petite img{
     width: 100%;
-    height: 75%;
-}
-    
-.notredame-img img{
-    width: 100%;
-    height: 100%;
+    height: 70%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
 }
-    
-.notredame-texte{
-    width: 100%;
-    height: 25%;
-}
-
-.notredame-texte h3{
-    color: black;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 12px 0 0 15px;
-}
-
-
-
-                        /* LONGCHAMP */
-.longchamp{
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 7px #b9c5d6;
-    width: 255px;
-    height: 160px;
-}
-    
-.longchamp-img{
-    width: 100%;
-    height: 65%;
-}
-    
-.longchamp-img img{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
-}
-    
-.longchamp-texte{
-    width: 100%;
-    height: 35%;
-}
-
-.longchamp-texte h3{
-    color: black;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 15px 0 0 15px;
-}
-
-
 
 /****************** FOOTER ***************************/
 footer{
@@ -1200,239 +484,146 @@ footer{
     font-size: 12px;
 }
 
-
-
-
-
 /** MEDIA QUERIES **/
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1100px){
     /*SECTION HEBERGEMENT*/
     #hebergements{
-        width: 900px;
+        height: 820px;
+        width: 50%;
+    }
+    
+    .carte-standard{
+        justify-content: space-around;
+    }
+    
+    .carte{
+        width: 40%;
     }
 
-    .hebergement-standard{
-        width: 520px;
-        height: 660px;
+    .carte h3{
+        font-size: 12px;
+    }
+    
+    .carte p{
+        font-size: 10px;
     }
 
+    /*ASIDE POPULAIRE*/
+    #hebergement-populaire{
+        height: 820px;
+        width: 40%;
+    }
+    
+    .titre-populaire{
+        justify-content: space-between;
+    }
+    
+    .container-populaire{
+        height: 90%;
+        justify-content: space-around;
+    }
+    
     .carte-populaire{
-        height: 390px;
-    }
-
-    .hebergement-populaire{
-        height: 490px;
-    }
-
-    /*CARTES POPULAIRE*/
-    .bleublanc-texte{
-        margin: 15px 0 0 15px ;
-    }
-    .soleil-texte{
-        margin: 15px 0 0 15px ;
-    }
-    .coeur-texte{
-        margin: 15px 0 0 15px ;
+        margin-bottom: 0;
     }
 
     /*SECTION ACTIVITES*/
     #activites{
-        width: 900px;
+        height: 350px;
     }
 
+    #activites h1{
+        margin: 40px 0 15px 30px;
+    }
+    
     .container-activite{
+        flex-direction: column;
+    }
+    
+    .trois-cartes{
+        height: 45%;
+        width: 100%;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+    
+    .grande {
+        width: 30%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .carte-activite{
-        flex-direction: column;
-    }
-
-    .premieres-3-cartes{
-        height: 48%;
-        width: 100%;
-        flex-direction: row;
-        justify-content:space-around;
-        align-content: center;
     }
     
-    .dernieres-3-cartes{
-        width: 100%;
-        height: 48%;
-        flex-direction: row;
-        justify-content:space-around;
-        align-content: center;
-    }
-
-    /*3 PREMIERES CARTES*/
-    .frioul{
-        width: 250px;
-        height: 140px;
-    }
-        
-    .frioul-img{
-        height: 75%;
-    }
-         
-    .frioul-texte{
-        height: 25%;
+    .grande img{
+        height: 70%;
     }
     
-    .frioul-texte h3{
-        padding: 12px 0 0 15px;
-    }
-    .vieuxport{
-        width: 250px;
-        height: 140px;
-    }
-        
-    .vieuxport-img{
-        height: 75%;
-    }
-         
-    .vieuxport-texte{
-        height: 25%;
+    .moyenne{
+        width: 30%;
+        height: 100%;
     }
     
-    .vieuxport-texte h3{
-        padding: 12px 0 0 15px;
-    }
-    .pomegues{
-        width: 250px;
-        height: 140px;
-    }
-        
-    .pomegues-img{
-        height: 75%;
-    }
-         
-    .pomegues-texte{
-        height: 25%;
+    .moyenne img{
+        height: 70%;
     }
     
-    .pomegues-texte h3{
-        padding: 12px 0 0 15px;
-    }
-
-    /*3 DERNIERES CARTES*/
-    .longchamp{
-        width: 250px;
-        height: 140px;
-    }
-        
-    .longchamp-img{
-        height: 75%;
-    }
-         
-    .longchamp-texte{
-        height: 25%;
+    .petite{
+        width: 30%;
+        height: 100%;
     }
     
-    .longchamp-texte h3{
-        padding: 12px 0 0 15px;
-    }
-    .notredame{
-        width: 250px;
-        height: 140px;
-    }
-        
-    .notredame-img{
-        height: 75%;
-    }
-         
-    .notredame-texte{
-        height: 25%;
-    }
-    
-    .notredame-texte h3{
-        padding: 12px 0 0 15px;
-    }
-    .calanques{
-        width: 250px;
-        height: 140px;
-    }
-        
-    .calanques-img{
-        height: 75%;
-    }
-         
-    .calanques-texte{
-        height: 25%;
-    }
-    
-    .calanques-texte h3{
-        padding: 12px 0 0 15px;
+    .petite img{
+        height: 70%;
     }
 }
 
 @media screen and (max-width: 992px){
     /*SECTION HEBERGEMENT*/
     #hebergements{
-        width: 700px;
+        height: 600px;
+        width: 90%;
+        margin: 0 auto 30px;
+        display: block;
     }
-
-    .container-hebergement{
-        flex-direction: column-reverse;
-        height: 850px;
-    }
-
-    .hebergement-standard{
-        width: 100%;
-        height: 470px;
-        margin: auto;
-    }
-
+    
     .carte-standard{
+        justify-content: space-around;
+    }
+    
+    .carte{
+        width: 26%;
+    }
+
+    /*ASIDE POPULAIRE*/
+    #hebergement-populaire{
+        height: 450px;
+        width: 90%;
+        float: none;
+        display: block;
         margin: auto;
-        width: 650px;
     }
-
-    .hebergement-populaire{
-        width: 700px;
-        height: 350px;
-    }
-
-    .carte-populaire{
+    
+    .container-populaire{
+        height: 90%;
+        justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 270px;
-        width: 650px;
-        justify-content: center;
-        margin: auto;
     }
-
-    /*CARTES POPULAIRE*/
-    .coeur{
-        margin-left: 15px;
-    }
-    .soleil{
-        margin-right: 15px;
+    
+    .carte-populaire{
+        margin-bottom: 0;
+        width: 45%;
     }
 
     /*SECTION ACTIVITES*/
     #activites{
-        width: 700px;
-        height: 700px;
+        width: 90%;
     }
 
-    .container-activite{
-        height: 800px;
+    .trois-cartes{
+        justify-content: space-between;
     }
 
-    .carte-activite{
-        height: 615px;
-    }
-
-    /*3 PREMIERES CARTES*/
-    .vieuxport{
-        margin-bottom: 20px;
-    }
-
-    /*3 DERNIERES CARTES*/
-    .calanques{
-        margin-bottom: 20px;
+    .carte-activite h3{
+        font-size: 12px;
     }
 
     /*FOOTER*/
@@ -1546,197 +737,107 @@ footer{
     }
 
     /*FILTRES*/
-    .filtre{
-        flex-direction: column;
+    .filtres{
         align-items: flex-start;
         height: auto;
+        flex-wrap: wrap;
     }
 
-    .filtre h2{
+    .filtre{
+        margin-bottom: 10px;
+    }
+
+    .filtres h2{
         margin-bottom: 20px;
+        width: 100%;
     }
     
-    .filtres{
-        margin-left: 0px;
-        margin-right: 0px;
-        width: auto;
-        justify-content: flex-start;
-    }
-
-    .filtre-economique,
-    .filtre-familial,
-    .filtre-romantique{
-        margin: 0 10px 10px 0;
-    }
-
     /*INFOS DISPO*/
     .infos-dispo{
         align-items: flex-start;
+        width: 90%;
     }
 
     /*SECTION HEBERGEMENT*/
     #hebergements{
-        margin: 0;
-        padding: 0;
-        height: auto;
         width: 100%;
-    }
-
-    .container-hebergement{
-        width: 100%;
-        height: auto;
-    }
-
-    .hebergement-populaire{
-        width: 100%;
-        border-radius: 0px;
-        height: 500px;
-    }
-
-    .carte-populaire{
-        flex-direction: column;
-        width: 300px;
-        margin: 0 auto;
-        height: 440px;
-        justify-content: space-evenly;
-    }
-
-    .hebergement-standard{
+        position: relative;
+        top: 700px;
         background-color: white;
         border-radius: 0px;
-        width: 100%;
-        height: auto;
     }
 
     .carte-standard{
-        height: auto;
-        width: 300px;
+       flex-direction: column;
+       align-items: center;
+    }
+    
+    .carte{
+       width: 90%;
+    }
+
+    /* ASIDE STANDARD */
+    #hebergement-populaire{
+        width: 100%;
+        position: relative;
+        top: -630px;
+        border-radius: 0px;
+        height: 700px;
+    }
+
+    .container-populaire{
         flex-direction: column;
+        height: 600px;
         align-items: center;
+        justify-content: space-around;
     }
-
-    .titre-populaire{
-        margin: 30px 20px 0 20px;
-        font-size: 16px;
-    }
-
-    .titre-hebergement{
-        margin: 30px 20px 0 20px;
-        font-size: 16px;
-    }
-
-    .afficher-plus{
-        margin: 0px 20px 0 20px;
-        font-size: 14px;
-    }
-
-    /* CARTES STANDARD */
-    .cannebiere{
-        width: 300px;
-    }
-    .amina{
-        width: 300px;
-    }
-    .panier{
-        width: 300px;
-    }
-    .mer{
-        width: 300px;
-    }
-    .mouettes{
-        width: 300px;
-    }
-    .port{
-        width: 300px;
-    }
-
-    /*CARTES POPULAIRE*/
-    .coeur{
-        margin-left: 0;
-    }
-    .soleil{
-        margin-right: 0;
+    
+    .carte-populaire{
+        margin-bottom: 0;
+        width: 90%;
     }
 
     /*SECTION ACTIVITES*/
     #activites{
-        margin: 0;
-        padding: 0;
         height: 1150px;
         width: 100%;
+        position: relative;
+        top: 850px;
+    }
+
+    #activites h1{
+        height: 30px;
     }
 
     .container-activite{
-        width: 100%;
-        align-items: center;
-        height: 1150px;
+        width: 90%;
+        height: auto;
+        margin: auto;
     }
 
-    .titre-activite{
-        align-self: flex-start;
-        padding-left: 20px;
+    .trois-cartes{
+        width: 100%;
+        flex-direction: column;
+        height: 1000px;
+        align-content: center;
+        justify-content: space-around;
     }
 
     .carte-activite{
-        flex-direction: column;
-        width: 300px;
-        height: 1025px;
-        justify-content: space-between;
+        width: 90%;
+        height: 300px;
     }
 
-    .premieres-3-cartes{
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 300px;
-        height: 500px;
-    }
-
-    .dernieres-3-cartes{
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 300px;
-        height: 500px;
-    }
-
-    /*3 PREMIERES CARTES*/
-    .vieuxport{
-        margin-bottom: 0px;
-        width: 100%;
-        height: 150px;
-    }
-    .frioul{
-        margin-bottom: 0px;
-        width: 100%;
-        height: 150px;
-    }
-    .pomegues{
-        margin-bottom: 0px;
-        width: 100%;
-        height: 150px;
-    }
-
-    /*3 DERNIERES CARTES*/
-    .longchamp{
-        margin-bottom: 0px;
-        width: 100%;
-        height: 150px;
-    }
-    .notredame{
-        margin-bottom: 0px;
-        width: 100%;
-        height: 150px;
-    }
-    .calanques{
-        margin-bottom: 0px;
-        width: 100%;
-        height: 150px;
+    .carte-activite h3{
+        font-size: 16px;
+        margin-top: 30px;
     }
 
     /*FOOTER*/
     footer{
         margin-top: 0;
+        position: relative;
+        top: 1800px;
     }
 }
 
@@ -1748,6 +849,14 @@ footer{
 }
 
 @media screen and (max-width: 560px){
+    .carte-populaire h3{
+        font-size: 12px;
+    }
+    
+    .carte-populaire p{
+        font-size: 10px;
+    }
+
     /*FOOTER*/
     .container-footer{
         width: 250px;
